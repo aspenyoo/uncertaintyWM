@@ -19,10 +19,11 @@ This section provides some explanation of the file `analysis_scripts.m`. There a
 - "Analyze data": code to compare models as reported in the publication.
 - "Create figures": code to recreate data figures in the publication. 
 
-### Run the experiment
+### Collect / Fit your own data!
+####Run the experiment
 Type `run_experiment` into MATLAB's command line. First, you will be prompted to give the subject's initials. You can provide any string (e.g., `S02`). Next, you will be prompted to give the experiment ID. You should input `R` for Reliability (main experimental block), `T` for Threshold block, or `P` for Practice block. Last, you will be prompted on which condition to collect data in (stimuli in second presentation). You should input `E` for Ellipse and `L` for line. Note that the low-reliability ellipse eccentricity is determined from the Threshold block, so that block is required before running the main Reliability block. 
 
-### Fit models to data
+#### Fit models to data
 This section of code contains an example, with brief explanations, of how to run `find_ML_parameters`, the function which estimates the Maximum Likelihood parameter combination, given a model and data.
 
 
